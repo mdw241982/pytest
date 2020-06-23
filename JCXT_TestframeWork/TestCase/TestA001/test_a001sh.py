@@ -25,4 +25,8 @@ webdriver.switch_to.frame("ifmBody_divF0____")
 @allure.setup('点击通过')
 webdriver.find_element_by_xpath("//input[@id='8b11080a-3d5b-4cef-8ebd-13ef5f150bbe']").click()
 
+#关闭浏览器，释放资源
+webdriver.quit()
+
+
 

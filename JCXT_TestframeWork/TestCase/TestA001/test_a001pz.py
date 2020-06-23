@@ -8,6 +8,7 @@ from time import sleep
 @allure.feature('审批管理')
 @allure.story('报告批准')
 @allure.title('A001项目批准页面功能按钮测试')
+@allure.severity('blocker')
 @allure.setup('点击审批管理菜单')
 webdriver.find_element_by_xpath("//div[@id='div_m_menu__1043420190109170053']").click()
 

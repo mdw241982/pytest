@@ -8,6 +8,7 @@ from time import sleep
 @allure.feature('报告管理')
 @allure.story('打印管理')
 @allure.title('A001项目打印页面功能按钮测试')
+@allure.severity('blocker')
 @allure.setup('点击报告管理菜单')
 webdriver.find_element_by_xpath("//div[@id='div_m_menu__1043420190109170102']").click()
 sleep(2)

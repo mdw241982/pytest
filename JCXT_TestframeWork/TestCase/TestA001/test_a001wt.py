@@ -8,6 +8,7 @@ from time import sleep
 @allure.feature('委托管理')
 @allure.story('业务受理')
 @allure.title('委托页面A001项目功能按钮测试')
+@allure.severity('blocker')
 @allure.setup('点击委托管理')
 webdriver.find_element_by_xpath("//div[@id='div_m_menu__1043420190109170028']").click()
 sleep(3)

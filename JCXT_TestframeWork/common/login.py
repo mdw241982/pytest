@@ -9,7 +9,6 @@ class TestJCXT:
         self.webdriver.implicitly_wait(10)
 
     def login(self):
-        self.webdriver.get(self, base_url)
         # 输入账号
         self.webdriver.find_element_by_xpath("//input[@id='txtUserID']").send_keys('xht')
         # 输入密码

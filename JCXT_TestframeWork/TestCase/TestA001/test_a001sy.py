@@ -8,6 +8,7 @@ from time import sleep
 @allure.feature('试验管理')
 @allure.story('数据采集')
 @allure.title('A001项目试验页面功能按钮测试')
+@allure.severity('blocker')
 @allure.setup('点击试验管理')
 webdriver.find_element_by_xpath("//div[@id='div_m_menu__1043420190109170048']").click()
 sleep(2)

@@ -1,9 +1,10 @@
-from selenium import webdriver
-import pytest
-driver = None
-driver = webdriver.Chrome()
-
-
+import os
+from datetime import datetime
+def pytest_configure(config):
+    """Pytest初始化时配置方法"""
+    if config.getoption('htmlpath'):  # 如果传了--html参数
+        now = datetime.now().strftime('%Y%m%d_%H%M%S')
+        config.option.htmlpath = os.path.join(config.rootdir, 'reports', f'report_{now}.html')
 """
 测试报告环境信息配置
 """

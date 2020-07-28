@@ -45,7 +45,7 @@ class WebTools(object):
     # 保存图片
     def get_windows_img(self):
         """
-        在这里我们把file_path这个参数写死，直接保存到我们项目根目录的一个文件夹.\Screenshots下
+        把file_path这个参数写死，直接保存到项目根目录的一个文件夹.\Screenshots下
         """
         file_path = os.path.dirname(os.path.abspath('.')) + '/screenshots/'
         rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
